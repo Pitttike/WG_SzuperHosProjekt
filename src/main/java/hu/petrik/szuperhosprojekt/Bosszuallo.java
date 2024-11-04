@@ -47,7 +47,7 @@ public abstract class Bosszuallo implements Szuperhos {
     @Override
     public String toString() {
         if (vanEGyengesege) {
-            return "Szupererő: " +  + "; vangyengesége";
+            return "Szupererő: " +  + "; van gyengesége";
         } else {
             return "Szupererő: " + szuperero + "; nincs gyengesége";
         }
