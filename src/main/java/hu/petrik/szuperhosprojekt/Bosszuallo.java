@@ -20,7 +20,7 @@ public abstract class Bosszuallo implements Szuperhos {
 
     @Override
     public boolean legyoziE(Szuperhos szuperhos) {
-        if (szuperhos instanceof Bosszuallo && vanEGyengesege && szuperhos.mekkoraAzEreje() < mekkoraAzEreje()) {
+        if (szuperhos instanceof Bosszuallo && ((Bosszuallo) szuperhos).vanEGyengesege && szuperhos.mekkoraAzEreje() < mekkoraAzEreje()) {
             return true;
         }
         if (szuperhos instanceof Batman && mekkoraAzEreje() >= szuperhos.mekkoraAzEreje()*2) {
